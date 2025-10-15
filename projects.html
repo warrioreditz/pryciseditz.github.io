@@ -5,92 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prycisedtiz | Projects</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-  <style>
-    /* Override for better grid layout control */
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      justify-items: center;
-    }
-
-    .project-card {
-      position: relative;
-      overflow: hidden;
-      border-radius: 20px;
-      background: #1a1a1a;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      aspect-ratio: 9 / 16; /* Keeps videos same reel format */
-      max-width: 400px;
-      margin: 0 auto;
-    }
-
-    .project-card video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 20px;
-      display: block;
-      transition: transform 0.3s ease;
-    }
-
-    .project-card:hover video {
-      transform: scale(1.05);
-    }
-
-    .logo-img {
-      width: 50px;
-      height: 50px;
-      margin-right: 10px;
-      border-radius: 50%;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">
-      <img src="./logo.png" alt="Prycisedtiz Logo" class="logo-img">
-      <span>Prycisedtiz</span>
-    </div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav>
+      <div class="logo">Prycisedtiz</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Projects Section -->
-  <section class="projects">
-    <h2>My Work</h2>
-    <p>Showcasing my motion graphics and real estate video edits.</p>
+  <main class="projects-section">
 
-    <!-- Motion Graphics Section -->
+    <h2 class="section-heading">My Projects</h2>
+
+    <!-- Motion Graphics -->
     <h3 class="section-title">Motion Graphics</h3>
     <div class="project-grid">
       <div class="project-card">
         <video controls>
-          <source src="./mg1.mp4" type="video/mp4">
+          <source src="./motion1.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
+
       <div class="project-card">
         <video controls>
-          <source src="./mg2.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="project-card">
-        <video controls>
-          <source src="./mg3.mp4" type="video/mp4">
+          <source src="./motion2.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
     </div>
 
-    <!-- Car Edits Section -->
+    <!-- Client Work -->
+    <h3 class="section-title">Client Work</h3>
+    <div class="project-grid">
+      <div class="project-card">
+        <video controls>
+          <source src="./client1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="project-card">
+        <video controls>
+          <source src="./client2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <!-- Car Edits -->
     <h3 class="section-title">Car Edits</h3>
     <div class="project-grid">
       <div class="project-card">
@@ -99,16 +71,19 @@
           Your browser does not support the video tag.
         </video>
       </div>
-      <div class="contact-cta">
-  <a href="contact.html" class="contact-btn">
-    <i class="fas fa-paper-plane"></i> Contact Me
-  </a>
-</div>
     </div>
 
+    <!-- Contact Button (moved outside grid) -->
+    <div class="contact-cta">
+      <a href="contact.html" class="contact-btn">
+        <i class="fas fa-paper-plane"></i> Contact Me
+      </a>
+    </div>
 
-  </section>
+  </main>
 
-  <script src="script.js"></script>
+  <footer>
+    <p>© 2025 Prycisedtiz. All rights reserved.</p>
+  </footer>
 </body>
 </html>
