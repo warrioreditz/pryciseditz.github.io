@@ -1,0 +1,420 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body & Fonts */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(15, 15, 15, 0.85);
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #ff6f61;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 50px;        /* adjust size as needed */
+  height: 50px;
+  object-fit: cover;  /* ensures logo fits nicely */
+  border-radius: 50%; /* makes it perfectly round */
+  border: 2px solid #ff6f61; /* optional colored border for cinematic effect */
+}
+
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #111 0%, #1f1f1f 100%);
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #aaa;
+}
+
+.hero .btn {
+  padding: 12px 30px;
+  background-color: #ff6f61;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #ff3f2f;
+  transform: scale(1.05);
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #111 0%, #1f1f1f 100%);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px; 
+  height: 200px;
+  background: url('../assets/images/logo.png') no-repeat center/cover;
+  border-radius: 50%;
+  opacity: 0.05;       /* subtle cinematic effect */
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+
+
+/* About Section */
+.about {
+  padding: 100px 50px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.8;
+}
+
+.projects {
+  padding: 120px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.projects p {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  color: #ccc;
+}
+
+/* Grid Layout */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Project Card */
+.project-card {
+  overflow: hidden;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card video {
+  width: 250px;       /* reel width */
+  height: 444px;      /* 9:16 aspect ratio */
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover video {
+  transform: scale(1.05);
+}
+
+/* Grid Layout for Reels */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+
+.project-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(15, 15, 15, 0.85);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-info {
+  transform: translateY(0);
+}
+
+.project-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.project-info p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #aaa;
+}
+
+.project-info a {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #ff6f61;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.project-info a:hover {
+  background-color: #ff3f2f;
+  transform: scale(1.05);
+}
+.section-title {
+  font-size: 2rem;
+  margin: 60px 0 20px;
+  text-align: left;
+  color: #fff;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px; /* slightly bigger gap for spacing */
+}
+
+
+.projects {
+  padding: 150px 50px 50px 50px; /* top padding increased to 150px */
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.section-title {
+  font-size: 2rem;
+  margin: 60px 0 30px; /* top 60px, bottom 30px */
+  text-align: left;
+  color: #fff;
+}
+.projects, .section-title {
+  scroll-margin-top: 120px; /* equal to navbar height */
+}
+/* Contact Section */
+.contact-section {
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+  background: #0f0f0f;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  color: #aaa;
+  margin-bottom: 60px;
+}
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact-card {
+  background: #1a1a1a;
+  border-radius: 20px;
+  padding: 40px;
+  width: 260px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+}
+
+.contact-card i {
+  font-size: 2.5rem;
+  color: #00bcd4;
+  margin-bottom: 15px;
+}
+
+.contact-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.contact-card a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+.contact-card p {
+  word-wrap: break-word;  /* ensures long text wraps */
+  word-break: break-all;  /* safe fallback */
+  margin: 0;
+}
+
+.contact-card a {
+  display: inline-block;  /* keeps link inside card */
+  color: #00bcd4;
+  text-decoration: none;
+  max-width: 100%;         /* prevents overflow */
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.contact-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;       /* spacing below text */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;        /* line length */
+  height: 3px;        /* line thickness */
+  background-color: #00bcd4;  /* line color */
+  border-radius: 2px; /* subtle rounding */
+}
+.contact-card {
+  background: #111;          /* dark box background */
+  border-left: 4px solid #00bcd4;  /* colored accent on left */
+  border-radius: 15px;
+  padding: 40px;
+  width: 260px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 188, 212, 0.3);  /* subtle colored shadow */
+}
+.contact-card i {
+  font-size: 2.5rem;
+  color: #00bcd4;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.contact-card:hover i {
+  color: #ff6f61;  /* changes icon color on hover */
+}
+footer {
+  text-align: center;
+  padding: 30px 0;
+  color: #888;
+  font-size: 0.95rem;
+  background: #0f0f0f;  /* matches contact section */
+  border-top: 1px solid #222; /* subtle separation line */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.car-video .video-wrapper {
+  width: 250px;      /* Reel width */
+  height: 450px;     /* Reel height */
+  overflow: hidden;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.car-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fill container nicely */
+  display: block;
+}

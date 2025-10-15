@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prycisedtiz | Projects</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Quick fixes for videos and cards */
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .project-card {
+      flex: 1 1 300px;
+      background: #111;
+      padding: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .project-card video {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+    }
+
+    /* Navbar fixes for logo */
+    .logo-img {
+      width: 50px;
+      height: auto;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="Prycisedtiz Logo" class="logo-img">
+      <span>Prycisedtiz</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <h2>My Work</h2>
+    <p>Showcasing my motion graphics and real estate video edits.</p>
+
+    <!-- Motion Graphics Section -->
+    <h3 class="section-title">Motion Graphics</h3>
+    <div class="project-grid">
+      <div class="project-card">
+        <video controls>
+          <source src="assets/videos/mg1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="project-card">
+        <video controls>
+          <source src="assets/videos/mg2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="project-card">
+        <video controls>
+          <source src="assets/videos/mg3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    
+    <h3 class="section-title">Car edits</h3>
+   <div class="project-card car-video">
+  <div class="video-wrapper">
+    <video controls>
+      <source src="assets/videos/cr1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
