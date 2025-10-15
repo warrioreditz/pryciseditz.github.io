@@ -493,5 +493,38 @@ footer {
     margin-bottom: 10px;
   }
 }
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background: #222;
+  color: #fff;
+  padding: 12px 28px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: #444;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #222;
+  color: #222;
+}
+
+.btn-outline:hover {
+  background: #222;
+  color: #fff;
+}
+
 
 
